@@ -54,6 +54,7 @@ h1 {
     position: absolute; 
     background-size: 20%;
     background-repeat: no-repeat;
+    background-position: center;
     font-size: 80px;
     text-align: center;
     justify-content: center;
