@@ -4,6 +4,11 @@ To do list:
 
 - Movimento na diagonal
 
-- Descobrir metodo para quando vencer adicionar um tempo até: 
+ Feito: SetInterval(functio,tempo em milisegundos)
+ - Descobrir metodo para quando vencer adicionar um tempo até: 
         alert ()
         location.reload(true)
+
+- Colocar texto e gif para perda (SANGUE)
+
+- Incrementar range de perda e + focas?
