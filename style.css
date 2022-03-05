@@ -1,0 +1,26 @@
+body {
+    background-image: url("./imagens/background.png") ;
+    background-size: cover;
+    background-position: center;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+#objeto { 
+    width: 100px; 
+    height: 100px;
+    position: absolute; 
+    background-image: url("./imagens/Pinguim.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 70%; 
+    top: 70%; 
+}
