@@ -4,9 +4,8 @@ music.loop =true;
 music.playbackRate = 4;
 
 const musicFinal = new Audio('./musicas/fim.mp3');
-music.volume= 0.05
-music.loop = false;
-music.playbackRate = 2;
+const musicMorte = new Audio('./musicas/morte.mp3');
+
 
 function ContarSegundos(){
     let segundos = 1;
@@ -20,16 +19,6 @@ objeto.id = 'objeto'
 let movimento = document.getElementById('objeto').style
 let movimentoVertical = 70;
 let movimentoHorizontal = 70;
-
-/*function test_keys(){
-    let keylist = [ ];
-    for(let i = 0; i < keylist.length; i++)
-        if(!test_key(keylist[i]))
-            return false;
-
-    return true;
-}
-*/
 
 let moveKey = (event) => {
     const keyName = event.key;
@@ -57,8 +46,13 @@ let moveKey = (event) => {
     } 
 
     if (movimentoVertical < 62 && movimentoVertical > 30 &&  movimentoHorizontal < 60 && movimentoHorizontal > 35) {
-        alert ('Você morreu!!! Recomece!')
-        location.reload(true)
+        music.pause()
+        musicMorte.play()
+        const elem = document.getElementById('titulo');
+        elem.remove('titulo')
+        const morte = document.getElementById('morte');
+        morte.style.display = 'flex';
+        setInterval(ContarSegundos, 3000);
         
     }
     if (movimentoVertical < 25 &&  movimentoHorizontal < 20) {
