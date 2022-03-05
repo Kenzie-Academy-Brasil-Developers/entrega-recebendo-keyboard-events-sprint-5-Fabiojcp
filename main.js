@@ -1,12 +1,18 @@
 const music = new Audio('./musicas/CasteloAnimado.mp3');
 music.volume= 0.05
 music.loop =true;
-music.playbackRate = 2;
+music.playbackRate = 4;
+
 const musicFinal = new Audio('./musicas/fim.mp3');
 music.volume= 0.05
 music.loop = false;
 music.playbackRate = 2;
 
+function ContarSegundos(){
+    let segundos = 1;
+    alert ('Clique aqui para jogar novamente')
+    location.reload(true)
+}
 
 const objeto = document.createElement('div')
 document.body.appendChild(objeto)
@@ -62,6 +68,7 @@ let moveKey = (event) => {
         elem.remove('titulo')
         const fim = document.getElementById('final');
         fim.style.display = 'flex';
+        setInterval(ContarSegundos, 3000);
     }
 
 
