@@ -11,6 +11,7 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     text-align: center;
+    display: block;
 }
 
 #objeto { 
@@ -23,4 +24,24 @@ h1 {
     background-position: center;
     left: 70%; 
     top: 70%; 
+}
+
+p {
+    display: none;
+    background-image: url("./imagens/balloon-5.gif") ;
+    width: 100vw; 
+    height: 100vh;
+    position: absolute; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    font-size: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aquamarine;
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
 }

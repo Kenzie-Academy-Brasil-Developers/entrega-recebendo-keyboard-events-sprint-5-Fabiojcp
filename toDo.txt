@@ -1,0 +1,9 @@
+https://github.com/Kenzie-Academy-Brasil-Developers/entrega-recebendo-keyboard-events-sprint-5-Fabiojcp
+
+To do list:
+
+- Movimento na diagonal
+
+- Descobrir metodo para quando vencer adicionar um tempo até: 
+        alert ()
+        location.reload(true)

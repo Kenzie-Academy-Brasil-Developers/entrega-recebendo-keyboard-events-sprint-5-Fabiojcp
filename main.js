@@ -2,6 +2,10 @@ const music = new Audio('./musicas/CasteloAnimado.mp3');
 music.volume= 0.05
 music.loop =true;
 music.playbackRate = 2;
+const musicFinal = new Audio('./musicas/fim.mp3');
+music.volume= 0.05
+music.loop = false;
+music.playbackRate = 2;
 
 
 const objeto = document.createElement('div')
@@ -52,9 +56,12 @@ let moveKey = (event) => {
         
     }
     if (movimentoVertical < 25 &&  movimentoHorizontal < 20) {
-        alert ('Você está a salvo, parabéns!!!')
-        location.reload(true)
-        
+        music.pause()
+        musicFinal.play()
+        const elem = document.getElementById('titulo');
+        elem.remove('titulo')
+        const fim = document.getElementById('final');
+        fim.style.display = 'flex';
     }
 
 
