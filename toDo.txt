@@ -4,11 +4,11 @@ To do list:
 
 - Movimento na diagonal
 
+- Incrementar range de perda e deixar foca como objeto que se mova, alterando a zona de impacto, estilo 'pacman'
+
  Feito: SetInterval(functio,tempo em milisegundos)
  - Descobrir metodo para quando vencer adicionar um tempo até: 
         alert ()
         location.reload(true)
 
-- Colocar texto e gif para perda (SANGUE)
-
-- Incrementar range de perda e + focas?
+Feito: - Colocar texto e gif para perda
